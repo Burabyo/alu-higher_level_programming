@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-str = "This is a sample string that exceeds nine characters"
-print(str * 3)
+str = "Holberton School"
+print(3 * str)
 print(str[:9])
-
