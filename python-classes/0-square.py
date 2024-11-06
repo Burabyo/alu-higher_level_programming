@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-"""Create an Empty Square """
-
-class Square:
-    ''' creates an empty square'''
-    pass
+"""
+THIS CODE CONTAINS NO MODULESL
+"""
 
 
+class Square():
+    """
+    CLASS IS A SQUARE CLASS AND IS EMPTY
+    """
