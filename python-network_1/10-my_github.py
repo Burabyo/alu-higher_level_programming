@@ -1,15 +1,16 @@
-er id
-    from github
-"""
-import sys
-import requests
+#!/usr/bin/python3
+"""A script that takes GitHub credentials."""
 
 
-url = 'https://api.github.com/user'
+if __name__ == '__main__':
+    import requests
+    from requests.auth import HTTPBasicAuth
+    import sys
 
-if __name__ == "__main__":
-    res = requests.get(url, auth=(sys.argv[1], sys.argv[2])).json()
-    if 'id' in res:
-        print(res['id'])
-    else:
-        print(None)
+    url = 'https://api.github.com/user'
+    user = sys.argv[1]
+    xyz = sys.argv[2]
+    authori = HTTPBasicAuth(username=user, password=xyz)
+    response = requests.get(url, auth=authori)
+    result = response.json()
+    print(result.get('id'))
